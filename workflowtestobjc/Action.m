@@ -28,7 +28,7 @@
     return self;
 }
 
--(void)run {
+- (void)run {
     NSLog(@"input:%@ and output:%@",self.input, self.output);
     
 }

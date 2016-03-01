@@ -11,7 +11,7 @@
 
 @implementation Workflow
 
--(id)initWithTitle:(NSString *)name andActions:(NSMutableArray *)actions{
+- (id)initWithTitle:(NSString *)name andActions:(NSMutableArray *)actions{
     self.title = name;
     self.actions = actions;
     
@@ -22,7 +22,7 @@
     return self;
 }
 
--(void)run {
+- (void)run {
     [self.actions.firstObject run];
 }
 

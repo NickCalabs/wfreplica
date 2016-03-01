@@ -15,8 +15,8 @@
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSArray *actions;
 
--(id)initWithTitle:(NSString *)name andActions:(NSArray *)action;
--(void)run;
+- (id)initWithTitle:(NSString *)name andActions:(NSArray *)action;
+- (void)run;
 
 - (void)actionCompleted:(Action *)action;
 

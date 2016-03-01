@@ -12,6 +12,6 @@
 
 - (instancetype)initWithInput:(NSString *)inputString;
 
--(void)run;
+- (void)run;
 
 @end

@@ -35,15 +35,15 @@
 
 }
 
--(void)connection:(NSURLConnection *)connection didReceiveResponse:(nonnull NSURLResponse *)response{
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(nonnull NSURLResponse *)response{
     //data = [[NSMutableArray alloc] init];
 }
 
--(void)connection:(NSURLConnection *)connection didReceiveData:(nonnull NSData *)theData{
+- (void)connection:(NSURLConnection *)connection didReceiveData:(nonnull NSData *)theData{
     self.data = theData;
 }
 
--(void)connectionDidFinishLoading:(NSURLConnection*)connection{
+- (void)connectionDidFinishLoading:(NSURLConnection*)connection{
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     
     NSDictionary *jsonDict = [NSJSONSerialization JSONObjectWithData:self.data options:nil error:nil];
