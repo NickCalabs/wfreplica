@@ -19,7 +19,7 @@
 - (void)run {
     
     AVSpeechSynthesizer *synthesizer = [[AVSpeechSynthesizer alloc] init];
-    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:(@"%@", self.input)];
+    AVSpeechUtterance *utterance = [AVSpeechUtterance speechUtteranceWithString:[NSString stringWithFormat:@"%@", self.input]];
     [utterance setRate:0.5f];
     [synthesizer speakUtterance:utterance];
     
